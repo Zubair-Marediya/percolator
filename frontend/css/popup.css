@@ -1,0 +1,525 @@
+/* CSS Document */
+
+<style type="text/css">
+body { 
+	text-align:center; 
+	font-family:'Crimson Text', serif;
+	font-size: 14px;
+	padding: 25px;
+}
+.container-fluid {
+	background-color:white;
+  	height: 100%;
+  	padding: 25px;
+}
+
+h2 {
+    padding: 0px;
+    margin-top: 5px;
+}
+
+h3 {
+    padding: 0px;
+    color: rgb(82, 133, 120) !important;
+    font-family: 'Noto Sans', sans-serif !important;
+    font-size: 25px !important;
+    text-align:center !important;
+    margin-bottom: 40px !important;
+}
+
+hr {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.row-fluid{
+	overflow: hidden;
+	text-align:center;
+	font-family: 'Crimson Text', serif;
+	vertical-align: middle;
+}
+
+.heading {
+    padding: 10px;
+    font-family:'Noto Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#subheading {
+    font-family: 'Noto Sans', sans-serif;
+    text-align:left; 
+    margin-left: 20px; 
+    font-size: 16px;
+}
+
+/*~~~~~~~~~~~~~~~~~Start~~~~~~~~~~~~~~~~~~*/
+.article-card {
+    background-color: #eee;
+    border-bottom: 3px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    margin: 10px;
+    border-radius: 4px;
+    /*border: 3px solid #58C39C;*/
+    transition-duration: 0.4s;
+}
+
+/*~~~~~~~~~~~~~~~~~End~~~~~~~~~~~~~~~~~~*/
+
+
+
+.article-title {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.article-source {
+    font-size: 12px;
+    color: #555;
+    margin-left: 10px;
+}
+
+.article-obj {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.username {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    color: rgb(82, 133, 120);
+    margin-left: 10px;
+    text-align: left;
+}
+
+.username-read {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    color: #555;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.checkbox {
+    width:60px;
+    height:60px;
+    top:0px;
+    margin-left: 15px;
+    border-radius:2px;
+}
+
+.checkbox-mini {
+    width:40px;
+    height:40px;
+    top:0px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius:2px;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~Start~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#blue {
+    border: solid 4px #2c4d82;
+    background-color: rgba(38, 76, 134, .3);
+    transition-duration: 0.4s;
+}
+
+#blue:hover {
+    background-color: rgba(38, 76, 134, .6);
+}
+
+#red {
+    border: solid 4px #701e18;
+    background-color: rgba(112, 30, 24, .3);
+    transition-duration: 0.4s;
+}
+
+#red:hover {
+    background-color: rgba(112, 10, 12, .6);
+}
+
+#purple {
+    border: solid 4px #4a2a5b;
+    background-color: rgba(80, 38, 94, .3);
+    transition-duration: 0.4s;
+}
+
+#purple:hover {
+    background-color: rgba(80, 38, 94, .6);
+}
+/*~~~~~~~~~~~~~~~~~~~~~~End~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+.glyphicon-ok {
+    font-size: 20px; 
+    color: rgb(238, 238, 238); 
+    margin-left: 15px; 
+    margin-top: 12px;
+}
+
+.ok-mini {
+    font-size: 20px; 
+    margin-left: 7px; 
+    margin-top: 3px;
+}
+
+.btn .btn-default .btn-lg .bookmark {
+    margin-top: 20px; 
+    margin-left: 25px; 
+    border: 3px solid #333;
+    height: 30px; 
+    width: 30px; 
+    border-radius: 2px; 
+    padding:2px;
+}
+
+.bookmark {
+    onclick: "bookmarkCard";
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~Start~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#Discussion {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#discussion-search {
+    font-size: 16px;
+    padding: 5px;
+    padding-left: 28px;
+    border-radius: 4px;
+    border: 3px solid lightgrey;
+    color: black;
+    outline-width: 0;
+    margin-bottom: 10px;
+    /*text-align: center;*/
+}
+input::-webkit-input-placeholder {
+    color: lightgrey;
+}
+input{
+    text-indent: 200px;
+    transition-duration: 0.7s;
+}
+input:focus{
+    color: grey;
+    text-indent: 0px;
+}
+#make-annotations {
+    background-color: white; /* Green */
+    border: 3px solid #528578;
+    border-radius: 4px;
+    color: black; 
+    padding: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 3px;
+    -webkit-transition-duration: 0.75s; /* Safari */
+    transition-duration: 0.75s;
+    cursor: pointer;
+    outline-width: 0px;
+    width:100%;
+}
+#discuss-button {
+    background: none;
+    border: none;
+}
+#make-annotations:hover {
+    background-color: #528578;
+    color: white;
+}
+#home-button {
+    border-radius: 4px;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px;
+    /*border: 3px solid #528578;*/
+    background-color: #528578;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition-duration: 0.7s;
+}
+#home-button:hover {
+    background-color:#3A5E54;
+    border-color: #3A5E54;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~End~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.checklist {
+    float:left;
+    top: -10px;
+}
+
+.discussion-btn {
+    border-radius: 2px;
+    background-color: #58C39C;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-bottom: 3px solid rgb(58, 137, 95);
+}
+
+.discussion-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.bookmarks {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.navicons {
+    font-size: 40px;
+}
+
+#content-container {
+    width: 100%;
+}
+
+.content-column {
+    width: 550px;
+}
+
+.topic-column {
+    /*border: 5px solid rgba(0, 0, 0, .3);*/
+    border-radius: 10px;
+    background: rgba(0, 0, 0, .03);
+    margin-bottom: 30px;
+    
+}
+
+#navbar {
+    color: rgb(82, 133, 120);
+    font-family: sans-serif;
+}
+.navicons {
+    padding-top: 15px;
+    font-size:18px;
+    font-family: "Poppins", sans-serif;
+}
+#navtabs {
+    font-size:16px;
+    font-family: "Poppins", sans-serif;
+    
+}
+#navtabs a {
+    text-decoration:none;
+    color: rgb(82, 133, 120);
+}
+
+#navtabs a:hover {
+    text-decoration:none;
+    color: rgb(82, 133, 120);
+    border-top: 5px solid  rgba(82, 133, 120, .7);
+}
+
+#wordmark {
+    left: 0;
+    text-align: left;
+    height:70px;
+    
+}
+
+.active-tab {
+    border-top: 5px solid  rgb(82, 133, 120);
+}
+
+.topic-card{
+    
+}
+
+
+#row1col3 {
+    height:100%;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 100px;
+    background-color:#cc0066;
+    height:150px;
+    width: 150px;
+    padding-top: 45px;
+}
+#row2col1 {
+	padding-top: 5px;
+	font-family: 'Poppins', sans-serif;
+    background-color:#3A895F;
+    height:100%;
+    border-radius: 30px;
+}
+
+#row3col1 {
+    height:100%;
+    text-align: center;
+    margin: 30px;
+}
+
+
+#row4col1 {
+    background-color:#F0EFEF;
+    height:100%;
+}
+
+#row4col2{
+	text-align: left;
+    background-color:#F0EFEF;
+    height:100%;
+    font-size:60%;
+}
+
+#row4col3{
+    background-color:#F0EFEF;
+    height:100%;
+}
+
+#row5col1 {
+    background-color:#F0EFEF;
+    height:100%;
+}
+
+#row5col2{
+	text-align: left;
+    background-color:#F0EFEF;
+    height:100%;
+    font-size:60%;
+}
+
+#row5col3{
+    background-color:#F0EFEF;
+    height:100%;
+}
+#row6col1 {
+    background-color:#F0EFEF;
+    height:100%;
+}
+#row6col2 {
+	text-align:left;
+    background-color:#F0EFEF;
+    height:100%;
+    font-size:60%;
+}
+#row6col3 {
+    background-color:#F0EFEF;
+    height:100%;
+}
+#row7col1 {
+	text-align: left;
+    height:100%;
+}
+#row8col1 {
+    height:100%;
+    border-radius: 25px;
+    text-align: left;
+}
+#row9col1 {
+	padding-top: 10px;
+    height:70%;
+    text-align: left;
+    background-color:#58C39C;
+    border-radius: 50px;
+    font-size:80%;
+}
+#row10col1 {
+	padding-top: 10px;
+    height:70%;
+    text-align: left;
+    background-color:#58C39C;
+    border-radius: 50px;
+    font-size:80%;
+    
+
+}
+#row11col1 {
+    padding-top: 20px;
+	font-family: 'Poppins', sans-serif;
+    background-color:#3A895F;
+    height:100%;
+    border-radius: 50px;
+}
+.firstRatingBox{
+	padding-top: 10px;
+	font-size:50%;
+	margin-left: 60px;
+  margin-top: 10px;
+	background-color:#cc0000;
+	height:50px;
+	width: 50px;
+	border-radius: 25px;
+}
+.secondRatingBox{
+	padding-top: 10px;
+	font-size:50%;
+	margin-left: 60px;
+  margin-top: 10px;
+	background-color:#9900cc;
+	height:50px;
+	width: 50px;
+	border-radius: 25px;
+}
+.thirdRatingBox{
+	padding-top: 10px;	
+	font-size:50%;
+	margin-left: 60px;
+  margin-top: 10px;
+	background-color:#3333cc;
+	height:50px;
+	width: 50px;
+	border-radius: 25px;
+}
+#superRedRating{
+	padding-top: 10px;	
+	font-size:50%;
+  margin: 30px;
+	background-color:#cc0000;
+	height:50px;
+	width: 50px;
+	border-radius: 25px;
+}
+#redRating{
+	padding-top: 10px;	
+	font-size:50%;
+	margin: 30px;
+	background-color:#cc0066;
+	height:50px;
+	width: 50px;
+	border-radius: 25px;
+}
+#neutralRating{
+	padding-top: 10px;	
+	font-size:50%;
+	margin: 30px;
+	background-color:#9900cc;
+	height:50px;
+	width: 50px;
+	border-radius: 25px;
+}
+#blueRating{
+	padding-top: 10px;	
+	font-size:50%;
+	margin: 30px;
+	background-color:#3333cc;
+	height:50px;
+	width: 50px;
+	border-radius: 25px;
+}
+#superBlueRating{
+	padding-top: 10px;	
+	font-size:50%;
+	margin: 30px;
+	background-color:#0000ff;
+	height:50px;
+	width: 50px;
+	border-radius: 25px;
+}

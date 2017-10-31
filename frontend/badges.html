@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style = "min-width: 600px;">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Poppins|Tinos" rel="stylesheet">
+    <title>Percolator Homepage</title>
+    <link rel = "stylesheet" type="text/css" href ="css/popup.css">
+    <link rel = "stylesheet" type="text/css" href ="css/hover.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  </head>
+
+
+  <body>
+  <div id="app" class="container">
+    
+    <div id="navbar" class="row-fluid">
+      <div class="col-xs-6" id="wordmark">
+          <img src="images/wordmark-03.png" style="height:70px;"></img>
+        </div>
+      <div id ="navtabs" class= "col-xs-6 ">
+        <div class="col-xs-4">
+           <!--<span class="glyphicon glyphicon-bookmark navicons" aria-hidden="true"></span>-->
+           <br>
+           <a  href="bookmarks.html">Bookmarks</a>
+        </div>
+        <div class="col-xs-4">
+           <!--<span class="glyphicon glyphicon-comment navicons" aria-hidden="true"></span>-->
+           <br>
+          <a href="discussions.html">Discussions</a> 
+        </div>
+        <div class="col-xs-4">
+           <!--<span class="glyphicon glyphicon-star navicons" aria-hidden="true"></span>-->
+           <br>
+           <a class= "active-tab" href="badges.html">Badges</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    
+    <div class="col-xs-6">
+      <h3> IN PROGRESS</h3>
+      <div id="content-container" class="bookmarks">
+        <div class="content-column topic-column topic-card">
+          <div class="heading row-fluid" style="text-align:left">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-2">
+              <div id = "blue" class="checkbox-mini checklist">
+                <span class="glyphicon glyphicon-ok ok-mini" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div id = "purple" class="checkbox-mini checklist">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div id = "red" class="checkbox-mini checklist">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <span class="glyphicon glyphicon-star-empty" style="font-size:30px; margin-top: 10px; margin-left:10px;" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" style="font-size:30px; margin-left:10px; display:none" aria-hidden="true"></span> 
+            </div>
+            </div>
+        
+        <div class="article-card hvr-grow-shadow row-fluid" id = "https://www.vox.com/2017/4/27/15440378/trumps-tax-cuts-reform-corporate-individual-not-serious">
+          <div class="col-xs-2">
+            <div id = "blue" class="checkbox">
+              <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="col-xs-8">
+            <div class="article-title" style="font-size: 20px">
+              We waited seven months for Trump's tax plan, and we got ... this?
+            </div>
+            <div class="article-source" style="font-size: 16px">
+              VOX
+            </div>
+            <div class="article-obj" style="font-size: 16px">
+              40% Objective
+            </div>
+          </div>
+           <div class="col-xs-2">
+            <button type="button" class="btn btn-default btn-lg bookmark" 
+            style="margin-top: 25px; margin-left: 30px; border: 3px solid #333; height: 30px; width: 30px; 
+            border-radius: 0px; padding:2px;">
+              <span class="glyphicon glyphicon-bookmark" style="font-size:16px;" aria-hidden="true"></span> 
+            </button>
+           </div>
+        </div> 
+        <div class="article-card hvr-grow-shadow row-fluid" id = "http://thehill.com/policy/finance/335346-five-tax-reform-issues-dividing-republicans">
+          <div class="col-xs-2">
+            <div id = "purple" class="checkbox">
+              
+            </div>
+          </div>
+          <div class="col-xs-8">
+            <div class="article-title" style="font-size: 20px">
+              Five tax reform issues dividing Republicans
+            </div>
+            <div class="article-source" style="font-size: 16px">
+              THE HILL
+            </div>
+            <div class="article-obj" style="font-size: 16px">
+              54% Objective
+            </div>
+          </div>
+           <div class="col-xs-2">
+            <button type="button" class="btn btn-default btn-lg bookmark" 
+            style="margin-top: 25px; margin-left: 30px; border: 3px solid #333; height: 30px; width: 30px; 
+            border-radius: 0px; padding:2px;">
+              <span class="glyphicon glyphicon-bookmark" style="font-size:16px;" aria-hidden="true"></span> 
+            </button>
+           </div>
+        </div> 
+        <div class="article-card hvr-grow-shadow row-fluid" id = "http://www.allsides.com/news/2017-08-01-0707/senate-democrats-no-tax-cuts-rich">
+          <div class="col-xs-2">
+            <div id = "red" class="checkbox">
+            </div>
+          </div>
+          <div class="col-xs-8">
+            <div class="article-title" style="font-size: 20px">
+              Senate Democrats: No tax cuts for the rich
+            </div>
+            <div class="article-source" style="font-size: 16px">
+              THE WASHINGTON TIMES
+            </div>
+            <div class="article-obj" style="font-size: 16px">
+              42% Objective
+            </div>
+          </div>
+           <div class="col-xs-2">
+            <button type="button" class="btn btn-default btn-lg bookmark" 
+            style="margin-top: 25px; margin-left: 30px; border: 3px solid #333; height: 30px; width: 30px; 
+            border-radius: 0px; padding:2px;">
+              <span class="glyphicon glyphicon-bookmark" style="font-size:16px;" aria-hidden="true"></span> 
+            </button>
+           </div>
+        </div>
+        </div>
+        <div class="content-column topic-column topic-card">
+          <div class="heading row-fluid" style="text-align:left">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-2">
+              <div id = "blue" class="checkbox-mini checklist">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div id = "purple" class="checkbox-mini checklist">
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div id = "red" class="checkbox-mini checklist">
+                <span class="glyphicon glyphicon-ok ok-mini" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <span class="glyphicon glyphicon-star-empty" style="font-size:30px; margin-top: 10px; margin-left:10px;" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-star" style="font-size:30px; margin-top: 10px; margin-left:10px; display:none" aria-hidden="true"></span> 
+            </div>
+            </div>
+          
+          <div class="article-card hvr-grow-shadow row-fluid" id = "https://www.nytimes.com/2017/07/01/us/politics/trump-epa-chief-pruitt-regulations-climate-change.html?hp&action=click&pgtype=Homepage&clickSource=story-heading&module=first-column-region%C2%AEion=top-news&WT.nav=top-news">
+            <div class="col-xs-2">
+              <div id = "blue" class="checkbox">
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div class="article-title" style="font-size: 20px">
+                Counseled by Industry, Not Staff, E.P.A. Chief Is Off to a Blazing Start
+              </div>
+              <div class="article-source" style="font-size: 16px">
+                THE NEW YORK TIMES
+              </div>
+              <div class="article-obj" style="font-size: 16px">
+                55% Objective
+              </div>
+            </div>
+             <div class="col-xs-2">
+              <button type="button" class="btn btn-default btn-lg bookmark" 
+              style="margin-top: 25px; margin-left: 30px; border: 3px solid #333; height: 30px; width: 30px; 
+              border-radius: 0px; padding:2px;">
+                <span class="glyphicon glyphicon-bookmark" style="font-size:16px;" aria-hidden="true"></span> 
+              </button>
+             </div>
+          </div> 
+          <div class="article-card hvr-grow-shadow row-fluid" id = "http://www.politico.com/story/2017/06/01/white-house-tells-supporters-it-will-exit-paris-deal-239029">
+            <div class="col-xs-2">
+              <div id = "purple" class="checkbox">
+                
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div class="article-title" style="font-size: 20px">
+                Trump announces U.S. withdrawal from Paris climate deal
+              </div>
+              <div class="article-source" style="font-size: 16px">
+                POLITICO
+              </div>
+              <div class="article-obj" style="font-size: 16px">
+                70% Objective
+              </div>
+            </div>
+             <div class="col-xs-2">
+              <button type="button" class="btn btn-default btn-lg bookmark" 
+              style="margin-top: 25px; margin-left: 30px; border: 3px solid #333; height: 30px; width: 30px; 
+              border-radius: 0px; padding:2px;">
+                <span class="glyphicon glyphicon-bookmark" style="font-size:16px;" aria-hidden="true"></span> 
+              </button>
+             </div>
+          </div> 
+          <div class="article-card hvr-grow-shadow row-fluid" id = "http://www.washingtontimes.com/news/2017/jun/2/mike-pence-donald-trump-open-renegotiating-paris-d/">
+            <div class="col-xs-2">
+              <div id = "red" class="checkbox">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div class="article-title" style="font-size: 20px">
+                Pence: Trump open to renegotiating Paris climate deal, but wants to focus on domestic issues
+              </div>
+              <div class="article-source" style="font-size: 16px">
+                THE WASHINGTON TIMES
+              </div>
+              <div class="article-obj" style="font-size: 16px">
+                53% Objective
+              </div>
+            </div>
+             <div class="col-xs-2">
+              <button type="button" class="btn btn-default btn-lg bookmark" 
+              style="margin-top: 25px; margin-left: 30px; border: 3px solid #333; height: 30px; width: 30px; 
+              border-radius: 0px; padding:2px;">
+                <span class="glyphicon glyphicon-bookmark" style="font-size:16px;" aria-hidden="true"></span> 
+              </button>
+             </div>
+          </div>
+          </div>
+      </div>
+    </div>
+    <div class="col-xs-6">
+      <h3>EARNED BADGES</h3>
+      <div id="content-container" class="bookmarks">
+        <div class="content-column topic-column topic-card"  >
+        
+        <div class="heading row-fluid" style="text-align:left">
+          <div class="col-xs-2">
+            </div>
+            <div class="col-xs-2">
+              <div id = "blue" class="checkbox-mini checklist">
+                <span class="glyphicon glyphicon-ok ok-mini" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div id = "purple" class="checkbox-mini checklist">
+                <span class="glyphicon glyphicon-ok ok-mini" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div id = "red" class="checkbox-mini checklist">
+                <span class="glyphicon glyphicon-ok ok-mini" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <!--<span class="glyphicon glyphicon-star-empty" style="font-size:30px; margin-left:10px;" aria-hidden="true"></span>-->
+              <span class="glyphicon glyphicon-star" style="font-size:30px; margin-top: 10px; margin-left:10px;" aria-hidden="true"></span> 
+            </div>
+            </div>
+        
+        <div class="article-card hvr-grow-shadow row-fluid" id = "https://www.theverge.com/2017/8/9/16117616/google-engineer-diversity-memo-files-complaint-damore">
+          <div class="col-xs-2">
+            <div id = "blue" class="checkbox">
+              <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="col-xs-8">
+            <div class="article-title" style="font-size: 20px">
+              Google engineer fired over memo files labor complaint
+            </div>
+            <div class="article-source" style="font-size: 16px">
+              THE VERGE
+            </div>
+            <div class="article-obj" style="font-size: 16px">
+              54% Objective
+            </div>
+          </div>
+           <div class="col-xs-2">
+            <button type="button" class="btn btn-default btn-lg bookmark" 
+            style="margin-top: 25px; margin-left: 30px; border: 3px solid #333; height: 30px; width: 30px; 
+            border-radius: 0px; padding:2px;">
+              <span class="glyphicon glyphicon-bookmark" style="font-size:16px;" aria-hidden="true"></span> 
+            </button>
+           </div>
+        </div> 
+        <div class="article-card hvr-grow-shadow row-fluid" id = "https://www.bloomberg.com/news/articles/2017-08-08/google-fires-employee-behind-controversial-diversity-memo">
+          <div class="col-xs-2">
+            <div id = "purple" class="checkbox">
+              <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="col-xs-8">
+            <div class="article-title" style="font-size: 20px">
+              Google Fires Author of Divisive Memo on Gender Differences
+            </div>
+            <div class="article-source" style="font-size: 16px">
+              BLOOMBERG TECHNOLOGY
+            </div>
+            <div class="article-obj" style="font-size: 16px">
+              60% Objective
+            </div>
+          </div>
+           <div class="col-xs-2">
+            <button type="button" class="btn btn-default btn-lg bookmark" 
+            style="margin-top: 25px; margin-left: 30px; border: 3px solid #333; height: 30px; width: 30px; 
+            border-radius: 0px; padding:2px;">
+              <span class="glyphicon glyphicon-bookmark" style="font-size:16px;" aria-hidden="true"></span> 
+            </button>
+           </div>
+        </div> 
+        <div class="article-card hvr-grow-shadow row-fluid" id = "http://www.nationalreview.com/article/450240/lena-dunham-google-demonstrate-eroding-free-speech-culture">
+          <div class="col-xs-2">
+            <div id = "red" class="checkbox">
+              <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+            </div>
+          </div>
+          <div class="col-xs-8">
+            <div class="article-title" style="font-size: 20px">
+              Lena Dunham and Google Demonstrate Why Our Free Speech Culture Is Slipping Away
+            </div>
+            <div class="article-source" style="font-size: 16px">
+              NATIONAL REVIEW
+            </div>
+            <div class="article-obj" style="font-size: 16px">
+              35% Objective
+            </div>
+          </div>
+           <div class="col-xs-2">
+            <button type="button" class="btn btn-default btn-lg bookmark" 
+            style="margin-top: 25px; margin-left: 30px; border: 3px solid #333; height: 30px; width: 30px; 
+            border-radius: 0px; padding:2px;">
+              <span class="glyphicon glyphicon-bookmark" style="font-size:16px;" aria-hidden="true"></span> 
+            </button>
+           </div>
+        </div>
+        </div>
+        <div class="content-column topic-column topic-card">
+        
+          <div class="heading row-fluid" style="text-align:left">
+            <div class="col-xs-2">
+            </div>
+            <div class="col-xs-2">
+              <div id = "blue" class="checkbox-mini checklist">
+                <span class="glyphicon glyphicon-ok ok-mini" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div id = "purple" class="checkbox-mini checklist">
+                <span class="glyphicon glyphicon-ok ok-mini" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div id = "red" class="checkbox-mini checklist">
+                <span class="glyphicon glyphicon-ok ok-mini" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <!--<span class="glyphicon glyphicon-star-empty" style="font-size:30px; margin-left:10px;" aria-hidden="true"></span>-->
+              <span class="glyphicon glyphicon-star" style="font-size:30px; margin-top: 10px; margin-left:10px;" aria-hidden="true"></span> 
+            </div>
+            </div>
+        
+          <div class="article-card hvr-grow-shadow row-fluid">
+            <div class="col-xs-2">
+              <div id = "blue" class="checkbox">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div class="article-title" style="font-size: 20px" id = "http://www.huffingtonpost.com/entry/betsy-devos_us_5898c511e4b09bd304bcae16">
+                Teachers And Politicians Mount Final Push To Keep Betsy DeVos Away From Public Schools
+              </div>
+              <div class="article-source" style="font-size: 16px">
+                HUFFINGTON POST
+              </div>
+              <div class="article-obj" style="font-size: 16px">
+                50% Objective
+              </div>
+            </div>
+             <div class="col-xs-2">
+              <button type="button" class="btn btn-default btn-lg bookmark" 
+              style="margin-top: 25px; margin-left: 30px; border: 3px solid #333; height: 30px; width: 30px; 
+              border-radius: 0px; padding:2px;">
+                <span class="glyphicon glyphicon-bookmark" style="font-size:16px;" aria-hidden="true"></span> 
+              </button>
+             </div>
+          </div> 
+          <div class="article-card hvr-grow-shadow row-fluid">
+            <div class="col-xs-2">
+              <div id = "purple" class="checkbox">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div class="article-title" style="font-size: 20px" id = "https://www.wsj.com/articles/senate-expected-to-vote-on-devos-confirmation-as-education-secretary-1486463403">
+                Senate Expected to Vote on DeVos Confirmation as Education Secretary
+              </div>
+              <div class="article-source" style="font-size: 16px">
+                THE WALL STREET JOURNAL
+              </div>
+              <div class="article-obj" style="font-size: 16px">
+                70% Objective
+              </div>
+            </div>
+             <div class="col-xs-2">
+              <button type="button" class="btn btn-default btn-lg bookmark" 
+              style="margin-top: 25px; margin-left: 30px; border: 3px solid #333; height: 30px; width: 30px; 
+              border-radius: 0px; padding:2px;">
+                <span class="glyphicon glyphicon-bookmark" style="font-size:16px;" aria-hidden="true"></span> 
+              </button>
+             </div>
+          </div> 
+          <div class="article-card hvr-grow-shadow row-fluid">
+            <div class="col-xs-2">
+              <div id = "red" class="checkbox">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="col-xs-8">
+              <div class="article-title" style="font-size: 20px">
+                A Republic, If You Can Keep It: The Education Every Student Really Needs
+              </div>
+              <div class="article-source" style="font-size: 16px">
+                NATIONAL REVIEW
+              </div>
+              <div class="article-obj" style="font-size: 16px">
+                40% Objective
+              </div>
+            </div>
+             <div class="col-xs-2">
+              <button type="button" class="btn btn-default btn-lg bookmark" 
+              style="margin-top: 25px; margin-left: 30px; border: 3px solid #333; height: 30px; width: 30px; 
+              border-radius: 0px; padding:2px;">
+                <span class="glyphicon glyphicon-bookmark" style="font-size:16px;" aria-hidden="true"></span> 
+              </button>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+  </div>
+
+    
+  </body>
+</html>

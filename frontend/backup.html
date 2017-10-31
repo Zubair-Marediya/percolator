@@ -1,0 +1,28 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>News Scraper</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+    </style>
+  </head>
+
+
+
+  <body>
+    <p id="status">1</p>
+    <button id="do-count">Count</button>
+    <button id="grab-text">Log Text</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>

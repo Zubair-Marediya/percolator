@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Sample HTML Page</title>
+		<meta charset="utf-8" />				
+		<link rel="stylesheet" type="text/css" href="static/_css/sampleCSS.css">
+		<script type="text/javascript" src="static/_js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="static/_js/sampleJS.js"></script>		
+	</head>
+	<body>
+		<h1>Add Friends</h1>
+		<span>Name: </span>
+		<input type="text" name="Name" id="addFriendsName"><br>
+		<span>Friends: </span>
+		<input type="text" name="Friends" id="addFriendsFriends"><br>
+		<button type="button" id="buttonAddFriends">Add Friends</button> 
+		<p id="addFriendsResults"></p>
+
+		<hr>
+
+		<h1>Get Friends</h1>
+		<span>Name: </span><input type="text" name="Name" id="getFriendsName"><br>
+		<button type="button" id="buttonGetFriends">Get Friends</button> 
+		<p id="getFriendsResults"></p>
+
+		<hr>
+
+		<h1>Delete Friends Table</h1>		
+		<button type="button" id="buttonDeleteFriendsTable">Delete Friends Table</button> 
+
+		<hr>
+
+		<h1>Add Dicussion</h1>		
+		 <form action="/addDiscussion" method="post">
+			  Admin: <input type="text" name="Admin"><br>
+			  Friends: <input type="text" name="Friends"><br>
+			  Comment: <input type="text" name="Comment"></br>
+			  <input type="submit" value="Add Discussion">
+		</form> 
+		<hr>
+		<h1>Add Friends</h1>		
+		 <form action="/getDiscussion" method="get">
+			  Name: <input type="text" name="Name"><br>
+			  Friends: <input type="text" name="Friends"><br>
+			  <input type="submit" value="">
+		</form> 
+		<hr>
+		<h1>Add Friends</h1>		
+		 <form action="/deleteDiscussionsTable" method="get">
+			  Name: <input type="text" name="Name"><br>
+			  Friends: <input type="text" name="Friends"><br>
+			  <input type="submit" value="Submit">
+		</form> 								
+	</body>
+</html>
